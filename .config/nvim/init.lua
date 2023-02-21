@@ -207,7 +207,10 @@ require('telescope').setup {
       "--column",
       "--smart-case",
       "--type=sh",
-      "--type=lua"
+      "--type=lua",
+      "--type=yaml",
+      "--type=json",
+      "--type=gradle"
     },
     mappings = {
       i = {
