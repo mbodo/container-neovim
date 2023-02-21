@@ -214,6 +214,8 @@ require('telescope').setup {
     },
     mappings = {
       i = {
+        -- Opens the file from telescope in the buffer without exit it
+        ['<C-o>'] = function(prompt_bufnr) require("telescope.actions").select_default(prompt_bufnr) require("telescope.builtin").resume() end,
         ['<C-u>'] = false,
         ['<C-d>'] = false,
       },
