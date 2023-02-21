@@ -155,6 +155,9 @@ vim.keymap.set('n', '<C-j>', '<C-w>j<cr>')
 vim.keymap.set('n', '<C-k>', '<C-w>k<cr>')
 vim.keymap.set('n', '<C-l>', '<C-w>l<cr>')
 
+-- Autocommad https://dmerej.info/blog/post/vim-cwd-and-neovim/
+vim.api.nvim_create_autocmd('BufEnter', { pattern = '*', command = ':lcd%:p:h', })
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
