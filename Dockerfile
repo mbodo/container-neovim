@@ -75,4 +75,5 @@ RUN set -eux; \
     n stable
 
 RUN mkdir -p /root/.config; \
-    mkdir -p /root/.local/share/nvim
+    mkdir -p /root/.local/share/nvim; \
+    mkdir -p /workspace
