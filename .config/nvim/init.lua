@@ -149,6 +149,12 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+-- Remap window movements
+vim.keymap.set('n', '<C-h>', '<C-w>h<cr>')
+vim.keymap.set('n', '<C-j>', '<C-w>j<cr>')
+vim.keymap.set('n', '<C-k>', '<C-w>k<cr>')
+vim.keymap.set('n', '<C-l>', '<C-w>l<cr>')
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
