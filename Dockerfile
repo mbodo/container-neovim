@@ -74,6 +74,5 @@ RUN set -eux; \
     npm i -g n; \
     n stable
 
-RUN mkdir -p /root/.config/nvim
-
-COPY init.lua /root/.config/nvim/
+RUN mkdir -p /root/.config; \
+    mkdir -p /root/.local/share/nvim
