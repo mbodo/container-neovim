@@ -24,6 +24,7 @@ RUN set -eux; \
             xclip \
             ripgrep \
             tree \
+            xz-utils \
         ; \
         rm -rf /var/lib/apt/lists/*
 
